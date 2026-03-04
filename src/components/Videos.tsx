@@ -29,12 +29,12 @@ export const Videos = () => {
     return (
         <section id="videos" className="py-24 px-4 bg-black relative">
             <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0f] to-[#050508]" />
-            <div className="absolute top-[10%] left-[10%] w-[400px] h-[400px] bg-accent-purple/10 blur-[150px]" />
-            <div className="absolute bottom-[10%] right-[10%] w-[400px] h-[400px] bg-accent-blue/10 blur-[150px]" />
+            <div className="absolute top-[10%] left-[10%] w-[400px] h-[400px] bg-accent-red/10 blur-[150px]" />
+            <div className="absolute bottom-[10%] right-[10%] w-[400px] h-[400px] bg-accent-crimson/10 blur-[150px]" />
 
             <div className="z-10 relative max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-black mb-4">LATEST <span className="text-accent-cyan neon-text-blue">VIDEOS</span></h2>
+                    <h2 className="text-4xl md:text-5xl font-black mb-4">LATEST <span className="text-accent-neon neon-text-red">VIDEOS</span></h2>
                     <p className="text-gray-400 font-light max-w-lg mx-auto uppercase tracking-widest text-sm">Visual experiences that pulse with the sound.</p>
                 </div>
 
@@ -46,7 +46,7 @@ export const Videos = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="glass-card rounded-2xl overflow-hidden group cursor-pointer border border-white/5 hover:border-accent-blue/30"
+                            className="glass-card rounded-2xl overflow-hidden group cursor-pointer border border-white/5 hover:border-accent-crimson/30"
                         >
                             <div className="relative aspect-video overflow-hidden">
                                 <Image
@@ -69,8 +69,8 @@ export const Videos = () => {
                                 </div>
                             </div>
                             <div className="p-6">
-                                <span className="text-accent-cyan text-[10px] font-bold tracking-[0.3em] block mb-2">{video.category}</span>
-                                <h3 className="text-xl font-bold transition-colors group-hover:text-accent-blue">{video.title}</h3>
+                                <span className="text-accent-neon text-[10px] font-bold tracking-[0.3em] block mb-2">{video.category}</span>
+                                <h3 className="text-xl font-bold transition-colors group-hover:text-accent-crimson">{video.title}</h3>
                             </div>
                         </motion.div>
                     ))}
@@ -78,7 +78,7 @@ export const Videos = () => {
 
                 <motion.button
                     whileHover={{ scale: 1.05 }}
-                    className="px-10 py-4 glass border border-accent-blue/30 text-white rounded-full font-bold text-sm tracking-widest hover:bg-accent-blue/10 transition-colors uppercase group flex items-center mx-auto gap-3"
+                    className="px-10 py-4 glass border border-accent-crimson/30 text-white rounded-full font-bold text-sm tracking-widest hover:bg-accent-crimson/10 transition-colors uppercase group flex items-center mx-auto gap-3"
                 >
                     Visit YouTube Channel <Youtube className="group-hover:scale-110 transition-transform text-red-500" size={20} />
                 </motion.button>

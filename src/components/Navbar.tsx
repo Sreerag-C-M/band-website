@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Menu, X, Instagram, Twitter, Music2 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 export const Navbar = () => {
@@ -20,7 +21,7 @@ export const Navbar = () => {
 
     const navLinks = [
         { name: 'About', href: '#about' },
-        { name: 'Music', href: '#music' },
+        // { name: 'Music', href: '#music' },
         { name: 'Videos', href: '#videos' },
         { name: 'Gallery', href: '#gallery' },
         { name: 'Contact', href: '#contact' },
@@ -34,10 +35,15 @@ export const Navbar = () => {
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="group flex items-center gap-2">
-                    <div className="w-1.5 h-8 bg-accent-purple rounded-full group-hover:scale-y-110 transition-transform" />
-                    <h1 className="text-2xl font-black tracking-tighter text-white uppercase group-hover:text-accent-purple transition-colors">
-                        NAVA<span className="text-gray-500 group-hover:text-accent-blue transition-colors">RASA</span>
-                    </h1>
+                    <div className="relative h-12 w-auto min-w-[120px]">
+                        <Image
+                            src="/logo.png"
+                            alt="NAVARASA"
+                            fill
+                            className="object-contain saturate-150 brightness-115 contrast-110 mix-blend-screen"
+                            priority
+                        />
+                    </div>
                 </Link>
 
                 {/* Desktop Menu */}
@@ -46,10 +52,10 @@ export const Navbar = () => {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 hover:text-accent-cyan transition-all relative group"
+                            className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 hover:text-accent-neon transition-all relative group"
                         >
                             {link.name}
-                            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-accent-cyan transition-all group-hover:w-full" />
+                            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-accent-neon transition-all group-hover:w-full" />
                         </Link>
                     ))}
                 </div>
@@ -64,12 +70,12 @@ export const Navbar = () => {
                         ))}
                     </div>
                     <div className="w-[1px] h-6 bg-white/10 mx-2" />
-                    <motion.button
+                    {/* <motion.button
                         whileHover={{ scale: 1.05 }}
-                        className="px-6 py-2 glass border border-white/10 hover:border-accent-purple text-[10px] font-bold tracking-widest uppercase rounded-full transition-all"
+                        className="px-6 py-2 glass border border-white/10 hover:border-accent-red text-[10px] font-bold tracking-widest uppercase rounded-full transition-all"
                     >
                         Latest Release
-                    </motion.button>
+                    </motion.button> */}
                 </div>
 
                 {/* Mobile Toggle */}
@@ -93,7 +99,7 @@ export const Navbar = () => {
                             key={link.name}
                             href={link.href}
                             onClick={() => setIsMobileMenuOpen(false)}
-                            className="text-lg font-bold uppercase tracking-[0.2em] text-white hover:text-accent-purple transition-all"
+                            className="text-lg font-bold uppercase tracking-[0.2em] text-white hover:text-accent-red transition-all"
                         >
                             {link.name}
                         </Link>

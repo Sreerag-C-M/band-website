@@ -34,13 +34,13 @@ export const About = () => {
                     viewport={{ once: true }}
                     className="text-4xl md:text-5xl font-bold mb-4"
                 >
-                    THE STORY OF <span className="text-accent-purple">NAVARASA</span>
+                    THE STORY OF <span className="text-accent-red">NAVARASA</span>
                 </motion.h2>
                 <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: "100px" }}
                     viewport={{ once: true }}
-                    className="h-1 bg-accent-blue mx-auto mb-8"
+                    className="h-1 bg-accent-crimson mx-auto mb-8"
                 />
                 <motion.p
                     initial={{ opacity: 0 }}
@@ -75,10 +75,10 @@ export const About = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-[#050508] to-transparent opacity-60" />
                         </div>
                         <div className="p-6">
-                            <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-accent-purple transition-colors">
+                            <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-accent-red transition-colors">
                                 {member.name}
                             </h3>
-                            <p className="text-accent-cyan text-sm uppercase tracking-widest mb-4">
+                            <p className="text-accent-neon text-sm uppercase tracking-widest mb-4">
                                 {member.role}
                             </p>
                             <p className="text-gray-400 text-sm font-light leading-relaxed">

@@ -18,7 +18,7 @@ export const ParticlesBackground = () => {
                     ease: "linear",
                 }}
                 style={{ willChange: "transform" }}
-                className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] rounded-full bg-accent-purple/10 blur-[80px]"
+                className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] rounded-full bg-accent-red/10 blur-[80px]"
             />
             <motion.div
                 animate={{
@@ -32,7 +32,7 @@ export const ParticlesBackground = () => {
                     ease: "linear",
                 }}
                 style={{ willChange: "transform" }}
-                className="absolute top-[40%] -right-[10%] w-[60%] h-[60%] rounded-full bg-accent-blue/10 blur-[90px]"
+                className="absolute top-[40%] -right-[10%] w-[60%] h-[60%] rounded-full bg-accent-crimson/10 blur-[90px]"
             />
             <motion.div
                 animate={{
@@ -46,7 +46,7 @@ export const ParticlesBackground = () => {
                     ease: "linear",
                 }}
                 style={{ willChange: "transform" }}
-                className="absolute -bottom-[10%] left-[20%] w-[40%] h-[40%] rounded-full bg-accent-cyan/10 blur-[70px]"
+                className="absolute -bottom-[10%] left-[20%] w-[40%] h-[40%] rounded-full bg-accent-neon/10 blur-[70px]"
             />
 
             {/* Grid Overlay for futuristic look */}

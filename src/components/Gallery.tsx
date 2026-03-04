@@ -21,10 +21,10 @@ export const Gallery = () => {
         <section id="gallery" className="py-24 bg-[#050508] overflow-hidden">
             <div className="text-center mb-16 px-4">
                 <h2 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter uppercase">
-                    <span className="text-accent-purple neon-text-purple px-2">MOMENTS</span> CAPTURED
+                    <span className="text-accent-red neon-text-red px-2">MOMENTS</span> CAPTURED
                 </h2>
                 <p className="text-gray-500 font-light max-w-lg mx-auto tracking-[0.3em] text-[10px] uppercase">
-                    The Moving History of a Neon Legacy
+                    The Moving History of a Crimson Legacy
                 </p>
             </div>
 
@@ -63,7 +63,7 @@ export const Gallery = () => {
                             </div>
 
                             {/* Main Image Container */}
-                            <div className="relative w-full h-full rounded-sm overflow-hidden border-[10px] border-[#0a0a0f] shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:border-accent-purple/20">
+                            <div className="relative w-full h-full rounded-sm overflow-hidden border-[10px] border-[#0a0a0f] shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:border-accent-red/20">
                                 <Image
                                     src={item.src}
                                     alt={item.alt}
@@ -79,14 +79,14 @@ export const Gallery = () => {
                                     <motion.div
                                         initial={{ y: 20, opacity: 0 }}
                                         whileHover={{ y: 0, opacity: 1 }}
-                                        className="bg-black/80 backdrop-blur-md px-3 py-1 border-l-2 border-accent-cyan"
+                                        className="bg-black/80 backdrop-blur-md px-3 py-1 border-l-2 border-accent-neon"
                                     >
                                         <span className="text-white text-[10px] font-bold tracking-[0.3em] uppercase">{item.alt}</span>
                                     </motion.div>
                                 </div>
 
                                 {/* Light Leak Effect on hover */}
-                                <div className="absolute inset-0 bg-gradient-to-tr from-accent-purple/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                                <div className="absolute inset-0 bg-gradient-to-tr from-accent-red/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
                             </div>
                         </div>
                     ))}

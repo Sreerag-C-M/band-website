@@ -3,17 +3,17 @@
 :root {
   --background: #050508;
   --foreground: #ffffff;
-  --accent-purple: #a855f7;
-  --accent-blue: #3b82f6;
-  --accent-cyan: #22d3ee;
+  --accent-red: #ff0000;
+  --accent-crimson: #991b1b;
+  --accent-neon: #ff0000;
 }
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-accent-purple: var(--accent-purple);
-  --color-accent-blue: var(--accent-blue);
-  --color-accent-cyan: var(--accent-cyan);
+  --color-accent-red: var(--accent-red);
+  --color-accent-crimson: var(--accent-crimson);
+  --color-accent-neon: var(--accent-neon);
 
   --font-inter: var(--font-inter);
   --font-outfit: var(--font-outfit);
@@ -46,21 +46,17 @@
 
   .glass-card:hover {
     background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(168, 85, 247, 0.5);
-    /* 紫色边缘 */
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    /* 红色边缘 */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
   }
 
-  .neon-text-purple {
-    text-shadow: 0 0 8px rgba(168, 85, 247, 0.8), 0 0 20px rgba(168, 85, 247, 0.5);
+  .neon-text-red {
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.5);
   }
 
-  .neon-text-blue {
-    text-shadow: 0 0 8px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.5);
-  }
-
-  .neon-border-purple {
-    box-shadow: 0 0 10px rgba(168, 85, 247, 0.4), inset 0 0 5px rgba(168, 85, 247, 0.2);
+  .neon-border-red {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4), inset 0 0 5px rgba(255, 0, 0, 0.2);
   }
 }
 
@@ -79,7 +75,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-purple);
+  background: var(--accent-red);
 }
 
 html {
